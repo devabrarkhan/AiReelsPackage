@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | AI Reels Package</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Contact Specific Styles inline for simplicity */
+        .contact-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 80px; /* Nav spacing */
+            padding-bottom: 50px;
+        }
+
+        .contact-container {
+            width: 1000px;
+            max-width: 90%;
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            overflow: hidden;
+        }
+
+        .contact-info {
+            padding: 50px;
+            background: rgba(75, 29, 63, 0.4);
+            border-right: 1px solid var(--glass-border);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .contact-form-wrapper {
+            padding: 50px;
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .info-item {
+            margin-bottom: 40px;
+        }
+
+        .info-item h3 {
+            font-size: 1.2rem;
+            color: var(--text-color);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .info-item p {
+            color: var(--text-dim);
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+        }
+
+        .direct-link {
+            display: inline-block;
+            font-size: 0.9rem;
+            color: var(--text-color);
+            text-decoration: underline;
+            transition: 0.3s;
+        }
+
+        .direct-link:hover {
+            color: #fff;
+            text-shadow: 0 0 10px var(--text-color);
+        }
+
+        /* Form Styling */
+        .form-group {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 15px 10px;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid var(--glass-border);
+            color: var(--text-color);
+            font-size: 1rem;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        .form-input:focus {
+            border-bottom-color: var(--text-color);
+            box-shadow: 0 10px 10px -10px rgba(214, 193, 232, 0.2);
+        }
+
+        .form-label {
+            position: absolute;
+            top: 15px;
+            left: 10px;
+            color: var(--text-dim);
+            pointer-events: none;
+            transition: 0.3s ease;
+            font-size: 1rem;
+        }
+
+        /* Float label when input has focus or value */
+        .form-input:focus ~ .form-label,
+        .form-input:valid ~ .form-label {
+            top: -10px;
+            font-size: 0.8rem;
+            color: var(--text-color);
+        }
+
+        textarea.form-input {
+            resize: none;
+            height: 100px;
+        }
+
+        /* WhatsApp Button Special */
+        .btn-whatsapp {
+            background: rgba(37, 211, 102, 0.1);
+            border: 1px solid #25D366;
+            color: #25D366;
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
+            display: block;
+            padding: 15px;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn-whatsapp:hover {
+            background: #25D366;
+            color: #000;
+            box-shadow: 0 0 20px rgba(37, 211, 102, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+            .contact-info {
+                padding: 30px;
+                border-right: none;
+                border-bottom: 1px solid var(--glass-border);
+            }
+            .contact-form-wrapper {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background-wrapper">
+        <div class="gradient-blob blob-1"></div>
+        <div class="gradient-blob blob-2"></div>
+        <div class="gradient-blob blob-3"></div>
+        <div class="noise-overlay"></div>
+    </div>
+
+    <nav class="glass-nav">
+        <div class="logo">
+            <span class="logo-icon"><i class="fa-solid fa-brain"></i></span>
+            <span class="logo-text">AI REELS</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="https://aireelspackage.in/">Home</a></li>
+            <li><a href="https://constabrar.in/">About Constant Abrar</a></li>
+            <li><a href="https://aireelspackage.in/Order/" class="active btn-nav">Order Package</a></li>
+        </ul>
+        <div class="mobile-menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <section class="contact-page">
+        <div class="glass-card contact-container">
+            
+            <div class="contact-info">
+                <div class="info-item">
+                    <h3><i class="fa-brands fa-whatsapp"></i> Support within 6hrs</h3>
+                    <p>Get the quickest response directly on WhatsApp.</p>
+                    <a href="https://wa.me/918637213741" target="_blank" class="btn-whatsapp">
+                        Chat on WhatsApp
+                    </a>
+                </div>
+
+                <div class="info-item">
+                    <h3><i class="fa-brands fa-instagram"></i> Social Media</h3>
+                    <p>Follow us for updates and tips.</p>
+                    <div style="display: flex; flex-direction: column; gap: 10px;">
+                        <a href="https://instagram.com/aireelspackage/" target="_blank" class="direct-link">@aireelspackage (Brand)</a>
+                        <a href="https://instagram.com/const.abrar/" target="_blank" class="direct-link">@const.abrar (Developer)</a>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <h3><i class="fa-solid fa-envelope"></i> Email Us</h3>
+                    <p>Prefer email? Drop us a line.</p>
+                    <a href="mailto:const.abrar@proton.me" class="direct-link">const.abrar@proton.me</a>
+                </div>
+            </div>
+
+          <div class="contact-form-wrapper">
+    <h2 style="margin-bottom: 30px; font-size: 2rem;">Get in Touch</h2>
+    
+    <form action="https://api.web3forms.com/submit" method="POST">
+        
+        <!-- Web3Forms Access Key -->
+        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+
+        <!-- Optional settings -->
+        <input type="hidden" name="subject" value="New Contact Message - AI Reels Package">
+        <input type="hidden" name="redirect" value="success.html">
+
+        <div class="form-group">
+            <input type="text" name="name" class="form-input" required>
+            <label class="form-label">Your Name</label>
+        </div>
+
+        <div class="form-group">
+            <input type="email" name="email" class="form-input" required>
+            <label class="form-label">Email Address</label>
+        </div>
+
+        <div class="form-group">
+            <input type="text" name="subject_user" class="form-input" required>
+            <label class="form-label">Subject</label>
+        </div>
+
+        <div class="form-group">
+            <textarea name="message" class="form-input" required></textarea>
+            <label class="form-label">Message</label>
+        </div>
+
+        <button type="submit" class="btn-primary ripple-effect" style="width: 100%; cursor: pointer;">
+            <span>Send Message</span>
+            <div class="liquid"></div>
+        </button>
+    </form>
+</div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>AI REELS PACKAGE</h3>
+                    <p>Created by CONSTANT ABRAR</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://instagram.com/aireelspackage/" target="_blank" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://instagram.com/const.abrar/" target="_blank" class="social-btn"><i class="fa-solid fa-code"></i></a>
+                    <a href="https://wa.me/918637213741" target="_blank" class="social-btn"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AI Reels Package. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Simple frontend simulation for form submission
+        function handleSubmit(e) {
+            e.preventDefault();
+            
+            const btn = e.target.querySelector('button');
+            const originalText = btn.querySelector('span').innerText;
+            
+            // Simulate loading
+            btn.querySelector('span').innerText = "Sending...";
+            
+            setTimeout(() => {
+                alert("Thank you! Your message has been sent. We will contact you shortly.");
+                e.target.reset();
+                btn.querySelector('span').innerText = originalText;
+            }, 1500);
+        }
+    </script>
+</body>
+</html>
