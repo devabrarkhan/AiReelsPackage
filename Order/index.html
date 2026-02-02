@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order AI Reels Package</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .order-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 120px;
+            padding-bottom: 60px;
+        }
+
+        .order-container {
+            width: 1000px;
+            max-width: 92%;
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            overflow: hidden;
+        }
+
+        .order-info {
+            padding: 50px;
+            background: rgba(75, 29, 63, 0.5);
+            border-right: 1px solid var(--glass-border);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .order-info h1 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+        }
+
+        .price-tag {
+            font-size: 3rem;
+            font-weight: 800;
+            margin: 20px 0;
+            color: var(--text-color);
+            text-shadow: 0 0 20px rgba(214,193,232,0.4);
+        }
+
+        .order-info ul {
+            margin-top: 20px;
+        }
+
+        .order-info li {
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .order-info i {
+            color: var(--text-color);
+        }
+
+        .upi-box {
+            margin-top: 30px;
+            padding: 25px;
+            border: 1px solid var(--glass-border);
+            border-radius: 15px;
+            background: rgba(0,0,0,0.2);
+        }
+
+        .upi-btn {
+            display: block;
+            margin-top: 15px;
+            padding: 15px;
+            border-radius: 50px;
+            border: 1px solid var(--text-color);
+            text-align: center;
+            font-weight: 700;
+            transition: var(--transition);
+        }
+
+        .upi-btn:hover {
+            background: var(--text-color);
+            color: var(--bg-color);
+            box-shadow: 0 0 20px var(--text-color);
+        }
+
+        .form-wrapper {
+            padding: 50px;
+            background: rgba(255,255,255,0.02);
+        }
+
+        .form-wrapper h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .note-text {
+            font-size: 0.9rem;
+            color: var(--text-dim);
+            margin-bottom: 25px;
+        }
+
+        .form-group {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 14px 10px;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid var(--glass-border);
+            color: var(--text-color);
+            font-size: 1rem;
+            outline: none;
+        }
+
+        .form-label {
+            position: absolute;
+            top: 14px;
+            left: 10px;
+            color: var(--text-dim);
+            pointer-events: none;
+            transition: 0.3s;
+        }
+
+        .form-input:focus ~ .form-label,
+        .form-input:valid ~ .form-label {
+            top: -10px;
+            font-size: 0.8rem;
+            color: var(--text-color);
+        }
+
+        @media (max-width: 768px) {
+            .order-container {
+                grid-template-columns: 1fr;
+            }
+
+            .order-info {
+                border-right: none;
+                border-bottom: 1px solid var(--glass-border);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="background-wrapper">
+    <div class="gradient-blob blob-1"></div>
+    <div class="gradient-blob blob-2"></div>
+    <div class="gradient-blob blob-3"></div>
+    <div class="noise-overlay"></div>
+</div>
+
+<nav class="glass-nav">
+    <div class="logo">
+        <span class="logo-icon"><i class="fa-solid fa-brain"></i></span>
+        <span class="logo-text">AI REELS</span>
+    </div>
+    <ul class="nav-links">
+        <li><a href="https://aireelspackage.in/">Home</a></li>
+        <li><a href="https://constabrar.in/">Contact Developer</a></li>
+        <li><a href="https://aireelspackage.in/Contact/" class="btn-nav">Contact</a></li>
+    </ul>
+    <div class="mobile-menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+</nav>
+
+<section class="order-page">
+    <div class="glass-card order-container">
+
+        <div class="order-info">
+            <h1>AI Reels Package</h1>
+            <p>Get instant access to premium AI-generated reels for creators & businesses.</p>
+
+            <div class="price-tag">₹39 Only</div>
+
+            <ul>
+                <li><i class="fa-solid fa-check"></i> 15k+ Viral AI Reels</li>
+                <li><i class="fa-solid fa-check"></i> Ready to Upload</li>
+                <li><i class="fa-solid fa-check"></i> Not Copyright Safe</li>
+                <li><i class="fa-solid fa-check"></i> Instant Access</li>
+            </ul>
+
+            <div class="upi-box">
+                <p><strong> Click below and complete UPI payment.</strong></p>
+                <a class="upi-btn" href="upi://pay?pa=abrar2809@ptyes&pn=AI%20Reels%20Package&am=39&cu=INR">
+                    Pay ₹39 via UPI
+                </a>
+            </div>
+        </div>
+
+        <div class="form-wrapper">
+            <h2>Submit Payment Details</h2>
+            <p class="note-text">
+                After payment, fill this form to receive your download link by email.
+            </p>
+
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="PUT_YOUR_ACCESS_KEY_HERE">
+                <input type="hidden" name="subject" value="New AI Reels Package Order">
+                <input type="hidden" name="redirect" value="success.html">
+
+                <div class="form-group">
+                    <input type="text" name="name" class="form-input" required>
+                    <label class="form-label">Your Name</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" name="email" class="form-input" required>
+                    <label class="form-label">Email Address</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" name="utr" class="form-input" required>
+                    <label class="form-label">UTR / Transaction ID</label>
+                </div>
+
+                <button type="submit" class="btn-primary ripple-effect" style="width:100%;">
+                    <span>Submit & Get Access</span>
+                    <div class="liquid"></div>
+                </button>
+            </form>
+
+            <p class="note-text" style="margin-top:20px;">
+                All reels are edited and curated by our team.  
+                For personal use only. Redistribution is not allowed.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<footer class="main-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>AI REELS PACKAGE</h3>
+                <p>Created by CONSTANT ABRAR</p>
+            </div>
+            <div class="social-links">
+                <a href="https://instagram.com/aireelspackage/" target="_blank" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://constabrar.in/" target="_blank" class="social-btn"><i class="fa-solid fa-code"></i></a>
+                <a href="https://wa.me/918637213741" target="_blank" class="social-btn"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AI Reels Package. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
